@@ -10,9 +10,15 @@ import '../styles/index.css'
 
 // components
 import Home from './components/Home';
+import SecondCounter from './components/SecondsCounter.';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
+    <SecondCounter seconds={3333}/>
   </React.StrictMode>,
 )
+const intervalID = setInterval(myCallback, 1000);
+let cont = 0
+function myCallback() {
+  console.log("paso 1 segundo" + cont++ )
+}

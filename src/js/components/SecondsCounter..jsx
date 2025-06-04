@@ -5,14 +5,15 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import Card from "./Card";
 
 //create your first component
-const Home = () => {
+const SecondCounter = (props) => {
 	return (
 		<div className="text-center">
-
-			<Card/>
+            <h1>Secondcounter</h1>
+            <h1>{props.seconds}</h1>
+		
             
 		</div>
 	);
 };
 
-export default Home;
+export default SecondCounter;
