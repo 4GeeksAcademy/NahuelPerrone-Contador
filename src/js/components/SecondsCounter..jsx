@@ -10,6 +10,10 @@ const SecondCounter = (props) => {
 		<div className="text-center">
             <h1>Secondcounter</h1>
             <h1>{props.seconds}</h1>
+			<h1>{props.seconds1}</h1>
+			<h1>{props.seconds2}</h1>
+			<h1>{props.seconds3}</h1>
+
 		
             
 		</div>

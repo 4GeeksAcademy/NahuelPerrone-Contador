@@ -12,13 +12,20 @@ import '../styles/index.css'
 import Home from './components/Home';
 import SecondCounter from './components/SecondsCounter.';
 
+let cont = 0
+const intervalID = setInterval(
+function () {
+  let cuatro = Math.floor(cont/1000);
+   let tres = Math.floor(cont/100);
+    let dos = Math.floor(cont/10);
+     let uno = Math.floor(cont/1);
+     cont++
+     console.log (uno,dos,tres,cuatro)
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <SecondCounter seconds={3333}/>
+    <SecondCounter seconds={uno%10} seconds1={dos%10} seconds2={tres%10} seconds3={cuatro%10}/>
   </React.StrictMode>,
-)
-const intervalID = setInterval(myCallback, 1000);
-let cont = 0
-function myCallback() {
-  console.log("paso 1 segundo" + cont++ )
+);
 }
+,1000);
+
