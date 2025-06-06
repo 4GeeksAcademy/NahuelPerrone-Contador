@@ -13,17 +13,19 @@ import Home from './components/Home';
 import SecondCounter from './components/SecondsCounter.';
 
 let cont = 0
-const intervalID = setInterval(
+setInterval(
 function () {
+  let seis = Math.floor(cont/100000);
+  let cinco = Math.floor(cont/10000);
   let cuatro = Math.floor(cont/1000);
-   let tres = Math.floor(cont/100);
-    let dos = Math.floor(cont/10);
-     let uno = Math.floor(cont/1);
-     cont++
-     console.log (uno,dos,tres,cuatro)
+  let tres = Math.floor(cont/100);
+  let dos = Math.floor(cont/10);
+  let uno = Math.floor(cont/1);
+         cont++
+     console.log (uno,dos,tres,cuatro,cinco,seis)
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <SecondCounter seconds={uno%10} seconds1={dos%10} seconds2={tres%10} seconds3={cuatro%10}/>
+    <SecondCounter seconds={uno%10} secondsOne={dos%10} secondsTwo={tres%10} secondsThree={cuatro%10} secondsFour={cinco%10} secondsFive={seis%10}/>
   </React.StrictMode>,
 );
 }

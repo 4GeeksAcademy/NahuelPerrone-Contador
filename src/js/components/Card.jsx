@@ -1,16 +1,14 @@
 import React from "react";
 
-let seconds = "20"
+
+
 
 let Card = () => {
 
     return (
-        <div className="card" style={{width: "18rem"}}>
-        <div className="card-body">
-            <h5 className="card-title"onLoad={seconds}>{seconds} Segundos</h5>
-            <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-        </div>
-        </div>
+        <div className="card bg-black text-white border border-radius-5 d-flex justify-content-center align-items-center" style={{width: "6rem",height:"5rem"}}>
+ <i className="bi bi-clock fs-1 "></i>
+		</div>
     );
 
 };
